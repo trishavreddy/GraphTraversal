@@ -2,9 +2,11 @@
 Coded for NETS 1500
 
 DESCRIPTION
+
 This program implements graph traversal algorithms (BFS and DFS) using both adjacency list and adjacency matrix representations to analyze the Facebook social network dataset.
 
 HOW TO RUN
+
 1. Make sure the input file "facebook_combined.txt" or "small_graph.txt" is in the src directory
 2. Compile and run Main.java
 3. Program will output:
@@ -18,6 +20,7 @@ HOW TO RUN
 
 
 ASSUMPTIONS
+
  - I assumed that most of the nodes would be connected and it would be hard to randomly find a node that is in
  a different connected comp (if that exists) since there are so many nodes. Therefore, I assumed that if we had
  to find a new source node due to a diff connected comp, iterating through all nodes just to find unvisited ones
@@ -34,6 +37,7 @@ ASSUMPTIONS
 
 
 TIME ANALYSIS
+
 Load adjacency list: 14 ms
 Load adjacency matrix: 41 ms
 BFS adjacency list: 4 ms
@@ -64,6 +68,7 @@ of a vertex.
 
 
 CHALLENGES
+
 - I initially implemented visited as a simple List, but I then decided to use Map<Integer, Integer>
 for the BFS to store additional data like distances. This change improved functionality and helped me
 answer the follow-up questions.
